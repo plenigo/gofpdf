@@ -2546,6 +2546,10 @@ func (f *Fpdf) SplitLines(txt []byte, w float64) [][]byte {
 	l := 0
 	for i < nb {
 		c := s[i]
+		if int(c) >= len(cw) {
+			i++
+			continue
+		}
 		l += cw[c]
 		if c == ' ' || c == '\t' || c == '\n' {
 			sep = i
@@ -2711,8 +2715,8 @@ func (f *Fpdf) MultiCell(w, h float64, txtStr, borderStr, alignStr string, fill 
 			ns++
 		}
 		if int(c) >= len(cw) {
-			f.err = fmt.Errorf("character outside the supported range: %s", string(c))
-			return
+			i++
+			continue
 		}
 		if cw[int(c)] == 0 { //Marker width 0 used for missing symbols
 			l += f.currentFont.Desc.MissingWidth
@@ -4201,7 +4205,7 @@ func (f *Fpdf) generateCIDFontMap(font *fontDefType, LastRune int) {
 
 	// for each character
 	for cid := startCid; cid < cwLen; cid++ {
-		if font.Cw[cid] == 0x00 {
+		if cid >= len(font.Cw) || font.Cw[cid] == 0x00 {
 			continue
 		}
 		width := font.Cw[cid]
