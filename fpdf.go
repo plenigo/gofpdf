@@ -2715,6 +2715,7 @@ func (f *Fpdf) MultiCell(w, h float64, txtStr, borderStr, alignStr string, fill 
 			ns++
 		}
 		if int(c) >= len(cw) {
+			i++
 			continue
 		}
 		if cw[int(c)] == 0 { //Marker width 0 used for missing symbols
