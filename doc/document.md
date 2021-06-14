@@ -1,6 +1,5 @@
 # GoFPDF document generator
 
-[![No Maintenance Intended][badge-no-maintain]][unmaintained]
 [![MIT licensed][badge-mit]][license]
 [![Report][badge-report]][report]
 [![GoDoc][badge-doc]][godoc]
@@ -65,13 +64,13 @@ Best wishes to all of you.
 To install the package on your system, run
 
 ```shell
-go get github.com/jung-kurt/gofpdf
+go get github.com/plenigo/gofpdf
 ```
 
 Later, to receive updates, run
 
 ```shell
-go get -u -v github.com/jung-kurt/gofpdf/...
+go get -u -v github.com/plenigo/gofpdf/...
 ```
 
 ## Quick Start
@@ -261,28 +260,28 @@ for file attachments and annotations.
 [badge-github]: https://img.shields.io/badge/project-Git_Hub-blue.svg
 [badge-mit]: https://img.shields.io/badge/license-MIT-blue.svg
 [badge-no-maintain]: http://unmaintained.tech/badge.svg
-[badge-report]: https://goreportcard.com/badge/github.com/jung-kurt/gofpdf
-[badge-status]: https://travis-ci.org/jung-kurt/gofpdf.svg?branch=master
+[badge-report]: https://goreportcard.com/badge/github.com/plenigo/gofpdf
+[badge-status]: https://travis-ci.org/plenigo/gofpdf.svg?branch=master
 [coverage]: https://blog.golang.org/cover
 [dfont]: http://dejavu-fonts.org/
 [draw2d-site]: https://github.com/llgcode/draw2d
 [effective-go]: https://golang.org/doc/effective_go.html 
 [fpdf-site]: http://www.fpdf.org/
-[fpdf-test]: https://github.com/jung-kurt/gofpdf/blob/master/fpdf_test.go
+[fpdf-test]: https://github.com/plenigo/gofpdf/blob/master/fpdf_test.go
 [gfont]: https://fonts.google.com/
-[github]: https://github.com/jung-kurt/gofpdf
-[godoc]: https://godoc.org/github.com/jung-kurt/gofpdf
-[gofpdf-fork]: https://techgaun.github.io/active-forks/index.html#jung-kurt/gofpdf
-[issue109]: https://github.com/jung-kurt/gofpdf/issues/109
-[jung]: https://github.com/jung-kurt/
-[last-commit]: https://github.com/jung-kurt/gofpdf/commit/603f56990463f011cb1dbb64ef7f872c1adc009a
-[license]: https://raw.githubusercontent.com/jung-kurt/gofpdf/master/LICENSE
+[github]: https://github.com/plenigo/gofpdf
+[godoc]: https://godoc.org/github.com/plenigo/gofpdf
+[gofpdf-fork]: https://techgaun.github.io/active-forks/index.html#plenigo/gofpdf
+[issue109]: https://github.com/plenigo/gofpdf/issues/109
+[jung]: https://github.com/plenigo/
+[last-commit]: https://github.com/plenigo/gofpdf/commit/603f56990463f011cb1dbb64ef7f872c1adc009a
+[license]: https://raw.githubusercontent.com/plenigo/gofpdf/master/LICENSE
 [lint]: https://github.com/golang/lint
-[logo]: https://github.com/jung-kurt/gofpdf/raw/master/image/logo_gofpdf.jpg?raw=true
+[logo]: https://github.com/plenigo/gofpdf/raw/master/image/logo_gofpdf.jpg?raw=true
 [noto]: https://github.com/jsntn/webfonts/blob/master/NotoSansSC-Regular.ttf
 [pr]: https://help.github.com/articles/using-pull-requests/
-[report]: https://goreportcard.com/report/github.com/jung-kurt/gofpdf
-[status]: https://travis-ci.org/jung-kurt/gofpdf
-[test]: https://github.com/jung-kurt/gofpdf/blob/master/fpdf_test.go
+[report]: https://goreportcard.com/report/github.com/plenigo/gofpdf
+[status]: https://travis-ci.org/plenigo/gofpdf
+[test]: https://github.com/plenigo/gofpdf/blob/master/fpdf_test.go
 [unmaintained]: http://unmaintained.tech/
 [vet]: https://golang.org/cmd/vet/
