@@ -2546,6 +2546,10 @@ func (f *Fpdf) SplitLines(txt []byte, w float64) [][]byte {
 	l := 0
 	for i < nb {
 		c := s[i]
+		if int(c) >= len(cw) {
+			i++
+			continue
+		}
 		l += cw[c]
 		if c == ' ' || c == '\t' || c == '\n' {
 			sep = i
