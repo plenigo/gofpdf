@@ -4205,7 +4205,7 @@ func (f *Fpdf) generateCIDFontMap(font *fontDefType, LastRune int) {
 
 	// for each character
 	for cid := startCid; cid < cwLen; cid++ {
-		if font.Cw[cid] == 0x00 {
+		if cid >= len(font.Cw) || font.Cw[cid] == 0x00 {
 			continue
 		}
 		width := font.Cw[cid]
