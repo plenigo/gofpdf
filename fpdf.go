@@ -115,6 +115,7 @@ func fpdfNew(orientationStr, unitStr, sizeStr, fontDirStr string, size SizeType)
 	// Core fonts
 	f.coreFonts = map[string]bool{
 		"courier":      true,
+		"freesans":     true,
 		"helvetica":    true,
 		"times":        true,
 		"symbol":       true,

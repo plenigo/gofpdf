@@ -1,7 +1,5 @@
 # GoFPDF document generator
 
-[![No Maintenance
-Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 [![MIT
 licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/jung-kurt/gofpdf/master/LICENSE)
 [![Report](https://goreportcard.com/badge/github.com/jung-kurt/gofpdf)](https://goreportcard.com/report/github.com/jung-kurt/gofpdf)
@@ -47,38 +45,18 @@ for simplified Chinese) can be used.
 Also, support is provided to automatically translate UTF-8 runes to code
 page encodings for languages that have fewer than 256 glyphs.
 
-## We Are Closed
-
-This repository will not be maintained, at least for some unknown
-duration. But it is hoped that gofpdf has a bright future in the open
-source world. Due to Go’s promise of compatibility, gofpdf should
-continue to function without modification for a longer time than would
-be the case with many other languages.
-
-Forks should be based on the [last viable
-commit](https://github.com/jung-kurt/gofpdf/commit/603f56990463f011cb1dbb64ef7f872c1adc009a).
-Tools such as
-[active-forks](https://techgaun.github.io/active-forks/index.html#jung-kurt/gofpdf)
-can be used to select a fork that looks promising for your needs. If a
-particular fork looks like it has taken the lead in attracting
-followers, this README will be updated to point people in that
-direction.
-
-The efforts of all contributors to this project have been deeply
-appreciated. Best wishes to all of you.
-
 ## Installation
 
 To install the package on your system, run
 
 ``` shell
-go get github.com/jung-kurt/gofpdf
+go get github.com/plenigo/gofpdf
 ```
 
 Later, to receive updates, run
 
 ``` shell
-go get -u -v github.com/jung-kurt/gofpdf/...
+go get -u -v github.com/plenigo/gofpdf/...
 ```
 
 ## Quick Start
@@ -94,7 +72,7 @@ err := pdf.OutputFileAndClose("hello.pdf")
 ```
 
 See the functions in the
-[fpdf\_test.go](https://github.com/jung-kurt/gofpdf/blob/master/fpdf_test.go)
+[fpdf\_test.go](https://github.com/plenigo/gofpdf/blob/master/fpdf_test.go)
 file (shown as examples in this documentation) for more advanced PDF
 examples.
 
@@ -142,7 +120,7 @@ the tests complete.
 
 Please note that these examples run in the context of a test. In order
 run an example as a standalone application, you’ll need to examine
-[fpdf\_test.go](https://github.com/jung-kurt/gofpdf/blob/master/fpdf_test.go)
+[fpdf\_test.go](https://github.com/plenigo/gofpdf/blob/master/fpdf_test.go)
 for some helper routines, for example `exampleFilename()` and
 `summary()`.
 
@@ -213,7 +191,7 @@ Here are guidelines for making submissions. Your change should
   - be properly documented
   - be formatted with `go fmt`
   - include an example in
-    [fpdf\_test.go](https://github.com/jung-kurt/gofpdf/blob/master/fpdf_test.go)
+    [fpdf\_test.go](https://github.com/plenigo/gofpdf/blob/master/fpdf_test.go)
     if appropriate
   - conform to the standards of [golint](https://github.com/golang/lint)
     and [go vet](https://golang.org/cmd/vet/), that is, `golint .` and

@@ -78,11 +78,11 @@ Installation
 
 To install the package on your system, run
 
-    go get github.com/jung-kurt/gofpdf
+    go get github.com/plenigo/gofpdf
 
 Later, to receive updates, run
 
-    go get -u -v github.com/jung-kurt/gofpdf/...
+    go get -u -v github.com/plenigo/gofpdf/...
 
 
 Quick Start
